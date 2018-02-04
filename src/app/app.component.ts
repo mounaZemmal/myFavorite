@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-declare const $:any;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,6 +8,7 @@ declare const $:any;
 export class AppComponent implements OnInit {
   title = 'app';
   ngOnInit(){
+    
   
   }
 }
