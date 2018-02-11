@@ -5,10 +5,11 @@ declare interface RouteInfo {
     title: string;
     icon: string;
     class: string;
+    lien:string;
 }
 export const ROUTES: RouteInfo[] = [
-    { path: 'dashboard', title: 'Dashboard',  icon: '', class: 'glyphicon glyphicon-home' },
-    { path: 'log', title: 'Log',  icon:'', class: 'glyphicon glyphicon-briefcase' },
+    { path: 'dashboard', title: 'Dashboard',  icon: '', class: 'glyphicon glyphicon-home' ,lien: '#dashboard'},
+    { path: 'log', title: 'Log',  icon:'', class: 'glyphicon glyphicon-briefcase',lien:'#log' },
 
     
 ];

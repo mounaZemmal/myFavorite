@@ -7,13 +7,18 @@
                     
                     <ul class="list-unstyled components">
                         <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="active" >
-                            <a  [routerLink]="[menuItem.path]">
-                                <i class="{{menuItem.class}}">
-                                    {{menuItem.icon}}
-                                </i>
-                                <span>{{menuItem.title}}</span>                                 
+                            <a  href="{{menuItem.lien}}" data-toggle="collapse"  aria-expanded="false">
+                                <i class="{{menuItem.class}}"> </i>
+                               {{menuItem.title}}                                 
                             </a>
+                            <ul class="collapse list-unstyled" id="{{menuItem.path}}">
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 2</a></li>
+                                <li><a href="#">Home 3</a></li>
+                            </ul>                           
                         </li>
+              
+                        
                        
                 </ul>
            

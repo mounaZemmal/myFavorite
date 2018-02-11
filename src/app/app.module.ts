@@ -10,7 +10,16 @@ import { LogComponent } from './log/log.component';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatChipsModule,
+  MatGridListModule,
+  MatIconModule
+  // and so on...
+} from "@angular/material";
 const routes: Routes =[
   { path: 'dashboard',      component: DashboardComponent },
 
@@ -26,11 +35,14 @@ const routes: Routes =[
     SidebarComponent,
     NavbarComponent,
     DashboardComponent,
-    LogComponent
+    LogComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule,
+    MatCardModule,  
+    MatIconModule,   
+    MatGridListModule,
     RouterModule.forRoot(routes) 
     
     
