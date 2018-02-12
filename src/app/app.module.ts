@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PreprodComponent } from './preprod/preprod.component';
 import {
   MatButtonModule,
   MatCardModule,
@@ -25,7 +26,9 @@ const routes: Routes =[
 
   { path: 'log',     component: LogComponent },  
 
-  { path: '',               redirectTo: 'dashboard', pathMatch: 'full' }
+  { path: 'preprod', component: PreprodComponent },
+  { path: 'specifications',redirectTo: 'specifications', pathMatch: 'full' } 
+  
 ];
 
 
@@ -34,6 +37,7 @@ const routes: Routes =[
     AppComponent,
     SidebarComponent,
     NavbarComponent,
+    PreprodComponent,
     DashboardComponent,
     LogComponent,
   ],

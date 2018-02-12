@@ -1,17 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 declare const $:any;
+declare interface SubLink {
+  link: string;
+  title: string;
+};
 declare interface RouteInfo {
     path: string;
     title: string;
-    icon: string;
     class: string;
-    lien:string;
-}
+    lien:string;   
+    submenu:SubLink[]; 
+  }
+ 
 export const ROUTES: RouteInfo[] = [
-    { path: 'dashboard', title: 'Dashboard',  icon: '', class: 'glyphicon glyphicon-home' ,lien: '#dashboard'},
-    { path: 'log', title: 'Log',  icon:'', class: 'glyphicon glyphicon-briefcase',lien:'#log' },
-
-    
+    { path: 'dashboard', title: 'Dashboard', class: 'glyphicon glyphicon-home' ,lien: '#dashboard',submenu:[]},
+    { path: 'log', title: 'Log', class: 'glyphicon glyphicon-briefcase',lien:'#log', submenu: [{
+      link: 'dev',
+      title: 'dev'
+  }, {
+      link: 'preprod',
+      title: 'preprod'
+  },{
+    link:'prod',
+    title:'prod'
+  }
+], },    
 ];
 @Component({
   selector: 'app-sidebar',

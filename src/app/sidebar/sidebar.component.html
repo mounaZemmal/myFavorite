@@ -10,18 +10,15 @@
                             <a  href="{{menuItem.lien}}" data-toggle="collapse"  aria-expanded="false">
                                 <i class="{{menuItem.class}}"> </i>
                                {{menuItem.title}}                                 
-                            </a>
-                            <ul class="collapse list-unstyled" id="{{menuItem.path}}">
-                                <li><a href="#">Home 1</a></li>
-                                <li><a href="#">Home 2</a></li>
-                                <li><a href="#">Home 3</a></li>
+                            </a>  
+                              <ul  class="collapse list-unstyled"  id="{{menuItem.path}}" >
+                                <li *ngFor="let submenu of menuItem.submenu">
+                                    <a href="{{submenu.link}}">{{submenu.title}}</a>
+                                </li>
                             </ul>                           
-                        </li>
-              
-                        
-                       
-                </ul>
-           
+                        </li>                         
+                    </ul>
+                   
                 <ul class="list-unstyled CTAs">
                     <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Ajouter tableau</a></li>
                     <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a></li>
