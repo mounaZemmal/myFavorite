@@ -19,10 +19,13 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": ["../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        
+        "../node_modules/font-awesome/scss/font-awesome.scss",
+        "../node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
+        "../node_modules/angular-bootstrap-md/scss/mdb-free.scss",      
         "styles.css","../node_modules/material-design-icons/iconfont/material-icons.css"
       ],
       "scripts": ["../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/hammerjs/hammer.min.js",
                "../node_modules/bootstrap/dist/js/bootstrap.js"],
       "environmentSource": "environments/environment.ts",
       "environments": {

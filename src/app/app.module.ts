@@ -21,6 +21,11 @@ import {
   MatIconModule
   // and so on...
 } from "@angular/material";
+import { SpecificationsComponent } from './specifications/specifications.component';
+import { DatasetComponent } from './dataset/dataset.component';
+import { JahiaComponent } from './jahia/jahia.component';
+import { SitesComponent } from './sites/sites.component';
+
 const routes: Routes =[
   { path: 'dashboard',      component: DashboardComponent },
 
@@ -40,6 +45,10 @@ const routes: Routes =[
     PreprodComponent,
     DashboardComponent,
     LogComponent,
+    SpecificationsComponent,
+    DatasetComponent,
+    JahiaComponent,
+    SitesComponent,
   ],
   imports: [
     BrowserModule,
