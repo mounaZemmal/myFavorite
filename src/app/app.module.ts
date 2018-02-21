@@ -12,6 +12,12 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PreprodComponent } from './preprod/preprod.component';
+import { SpecificationsComponent } from './specifications/specifications.component';
+import { DatasetComponent } from './dataset/dataset.component';
+import { JahiaComponent } from './jahia/jahia.component';
+import { SitesComponent } from './sites/sites.component';
+import { ProdComponent } from './prod/prod.component';
+import { DevComponent } from './dev/dev.component';
 import {
   MatButtonModule,
   MatCardModule,
@@ -21,10 +27,7 @@ import {
   MatIconModule
   // and so on...
 } from "@angular/material";
-import { SpecificationsComponent } from './specifications/specifications.component';
-import { DatasetComponent } from './dataset/dataset.component';
-import { JahiaComponent } from './jahia/jahia.component';
-import { SitesComponent } from './sites/sites.component';
+
 
 const routes: Routes =[
   { path: 'dashboard',      component: DashboardComponent },
@@ -32,6 +35,12 @@ const routes: Routes =[
   { path: 'log',     component: LogComponent },  
 
   { path: 'preprod', component: PreprodComponent },
+  { path: 'prod', component: ProdComponent },
+  { path: 'dev', component: DevComponent },
+  { path: 'jahia', component: JahiaComponent },
+  
+  { path: 'dataset', component: DatasetComponent },
+  
   { path: 'specifications',redirectTo: 'specifications', pathMatch: 'full' } 
   
 ];
@@ -49,6 +58,8 @@ const routes: Routes =[
     DatasetComponent,
     JahiaComponent,
     SitesComponent,
+    ProdComponent,
+    DevComponent,
   ],
   imports: [
     BrowserModule,

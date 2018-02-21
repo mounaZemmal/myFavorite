@@ -1,7 +1,7 @@
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <h3>Bootstrap Sidebar</h3>
+                    <h3>Ere Book Mark</h3>
                     <strong>BS</strong>
                 </div>
                     
@@ -13,7 +13,7 @@
                             </a>  
                               <ul  class="collapse list-unstyled"  id="{{menuItem.path}}" >
                                 <li *ngFor="let submenu of menuItem.submenu">
-                                    <a href="{{submenu.link}}">{{submenu.title}}</a>
+                                    <a routerLink="{{submenu.link}}">{{submenu.title}}</a>
                                 </li>
                             </ul>                           
                         </li>                         

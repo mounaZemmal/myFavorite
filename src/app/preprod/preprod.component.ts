@@ -12,4 +12,8 @@ export class PreprodComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  updateRow(){
+    console.log("mounaTest");
+  }
 }

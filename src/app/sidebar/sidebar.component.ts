@@ -24,7 +24,22 @@ export const ROUTES: RouteInfo[] = [
     link:'prod',
     title:'prod'
   }
-], },    
+], },  
+{ path: 'specifications', title: 'Spécifications', class: 'glyphicon glyphicon-briefcase',lien:'#log', submenu: [{
+  link: 'dev',
+  title: 'dev'
+}, {
+  link: 'preprod',
+  title: 'preprod'
+},{
+link:'prod',
+title:'prod'
+}
+], },  
+{ path: 'dataset', title: 'DataSet', class: 'glyphicon glyphicon-home' ,lien: '#dataset',submenu:[]},
+
+
+
 ];
 @Component({
   selector: 'app-sidebar',
